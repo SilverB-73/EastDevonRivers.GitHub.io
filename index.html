@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local River Levels Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f2f1;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      height: 100vh;
+      padding: 10px;
+    }
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border: 1px solid #b1b4b6;
+    }
+    .grid-header {
+      background: #1d70b8;
+      color: white;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .grid-header a {
+      color: white;
+      text-decoration: none;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="grid-header">
+        <a href="https://check-for-flooding.service.gov.uk/station/3251" target="_blank">River Exe at Trews Weir (3251)</a>
+      </div>
+      <iframe src="https://check-for-flooding.service.gov.uk/station/3251" title="River Exe at Trews Weir"></iframe>
+    </div>
+
+    <div class="grid-item">
+      <div class="grid-header">
+        <a href="https://check-for-flooding.service.gov.uk/station/9430" target="_blank">River Culm at Bradninch Hele Station Road (9430)</a>
+      </div>
+      <iframe src="https://check-for-flooding.service.gov.uk/station/9430" title="River Culm at Bradninch Hele Station Road"></iframe>
+    </div>
+
+    <div class="grid-item">
+      <div class="grid-header">
+        <a href="https://check-for-flooding.service.gov.uk/station/3237" target="_blank">River Otter at Dotton (3237)</a>
+      </div>
+      <iframe src="https://check-for-flooding.service.gov.uk/station/3237" title="River Otter at Dotton"></iframe>
+    </div>
+
+    <div class="grid-item">
+      <div class="grid-header">
+        <a href="https://check-for-flooding.service.gov.uk/station/3261" target="_blank">River Creedy at Cowley Bridge (3261)</a>
+      </div>
+      <iframe src="https://check-for-flooding.service.gov.uk/station/3261" title="River Creedy at Cowley Bridge"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
 
